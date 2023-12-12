@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>NOSSO RESTAURANTE</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+.fakeimg 
+{
+    height: 200px;
+    background: #aaaaaa;
+} 
+
+body 
+{ /* só para exemplo, elimina espaçamento do body a seta um fundo escuro*/
+   margin: 0;
+   font-size: 16px;
+   box-sizing: border-box;
+}
+
+.cabecalho h1
+{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  font-weight: bolder;
+  font-size: 600%
+}
+
+article ul 
+{
+  display: flex;
+  justify-content: space-around;
+   font-size: 0; /* elimina espaços entre as li */
+   background-color: #fff; /* fundo branco na ul, se for preciso */
+   flex-wrap: wrap;
+}
+
+article ul li img 
+{
+  width: 50%; /* ajusta a largura da imagem dentro da li */
+   display: block; /* convertendo para block elimina espaço natural abaixo da imagem */
+}
+
+article ul, article ul li 
+{ /* remove espaços e o bullet da ul e das li */
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+
+article ul li 
+{
+   display: inline-block;
+   width: 25%; /* divide a largura por 4 */
+   box-sizing: border-box; /* restringe o padding à área da li */
+   text-align: center; /* centraliza o conteúdo */
+   padding: 25px; /* espaçamento interno entre o conteúdo e a borda da li */
+   font-size: 16px; /* ajusta o tamanho da fonte nas li com o tamanho padrão */
+   vertical-align: top; /* alinha as li no topo da linha */
+   min-width: 500px;
+   cursor: pointer;
+   border-radius: 50px; 
+}
+
+article ul li:hover 
+{
+  box-shadow: 0px 0px 10px black;
+ transform: scale(1.1)
+}
+
+.img_align 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+</style>
+</head>
+
+<body>
+
+  <!-- APRESENTAÇÃO -->
+
+<div class="p-5 bg-black text-white text-center cabecalho">
+  <h1>SEJA BEM-VINDO AO NOSSO RESTAURANTE!</h1>
+</div>
+
+<br>
+
+<center>
+
+<div class="container-fluid mt-3">
+  <h1>CONFIRA TODAS AS NOSSAS OPÇÕES ABAIXO!</h1>
+  <br>
+</div>
+
+<br>
+
+</center> 
+
+<center>
+
+  <!-- CARROSSEL -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+  <!-- INDICADORES DE QUANTIDADE -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+  </div>
+  
+  <!-- IMAGENS -->
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="./img/01_Prato1.png" alt="Los Angeles" class="d-block" style="width:25%">
+    </div>
+
+    <div class="carousel-item">
+      <img src="./img/02_Prato2.png" alt="Chicago" class="d-block" style="width:25%">
+    </div>
+
+    <div class="carousel-item">
+      <img src="./img/03_Prato3.png" alt="New York" class="d-block" style="width:25%">
+    </div>
+
+    <div class="carousel-item">
+      <img src="./img/04_Prato4.png" alt="New York" class="d-block" style="width:25%">
+    </div><div class="carousel-item">
+
+      <img src="./img/05_Prato5.png" alt="New York" class="d-block" style="width:25%">
+    </div>
+
+    <div class="carousel-item">
+      <img src="./img/06_Prato6.png" alt="New York" class="d-block" style="width:25%">
+    </div>
+  </div>
+  
+  <br>
+  <br>
+
+  <!-- BOTÕES PARA DESLIZE -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="next">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="prev">
+    <span class="carousel-control-next-icon"></span>
+  </button><i class="bi bi-arrow-left-short"></i>
+</div>
+
+<br>
+<br>
+
+<HR width="n%"align="posição" size="n" color="black" noshade> 
+
+<br>
+<br>
+
+    <article>
+      <ul>
+        <li>
+         <h3>PRATO 01</h3>
+         <p>
+         <div class="img_align">
+         <img src="./img/01_Prato1.png" alt="Los Angeles" class="d-block">
+         </div>
+         </p>
+         <h5>ARROZ, BIFE, ALFACE, MILHO COZIDO + 1 ACOMPANHAMENTO</h5>
+         <h3 class="mt-4">R$20,00</h3>
+        </li>
+        <li>
+          <h3>PRATO 02</h3>
+          <p>
+          <div class="img_align">
+          <img src="./img/02_Prato2.png" alt="Chicago" class="d-block">
+          </div>
+          </p>
+          <h5>ARROZ, HAMBÚRGUER, COUVE REFOGADA, FAROFA + 1 ACOMPANHAMENTO</h5>
+          <h3 class="mt-4">R$20,00</h3>
+        </li>
+        <li>
+          <h3>PRATO 03</h3>
+          <p>
+          <div class="img_align">
+          <img src="./img/03_Prato3.png" alt="New York" class="d-block">
+          </div>
+          </p>
+          <h5>PURÊ DE BATATA, ERVILHA, CAÇÃO, MOLHO DE PIMENTA + 1 ACOMPANHAMENTO</h5>
+          <h3 class="mt-4">R$20,00</h3>
+        </li>
+        <li>
+          <h3>PRATO 04</h3>
+          <p>
+          <div class="img_align">
+          <img src="./img/04_Prato4.png" alt="New York" class="d-block">
+          </div>
+          </p>
+          <h5>ARROZ, FEIJÃO, ISCA DE FRANGO, LIMÃO, PIMENTA, MILHO + 1 ACOMPANHAMENTO</h5>
+          <h3 class="mt-4">R$20,00</h3>
+        </li>
+        <li>
+          <h3>PRATO 05</h3>
+          <p>
+          <div class="img_align">
+          <img src="./img/05_Prato5.png" alt="New York" class="d-block">
+          </div>
+          </p>
+          <h5>2 BIFES, REPOLHO REFOGADO, OVO MEXIDO + 2 ACOMPANHAMENTOS</h5>
+          <h3 class="mt-4">R$26,00</h3>
+        </li>
+        <li>
+          <h3>PRATO 06</h3>
+          <p>
+          <div class="img_align">
+          <img src="./img/06_Prato6.png" alt="New York" class="d-block">
+          </div>
+          </p>
+          <h5>BRÓCOLIS, POLENTA, MINI-TOMATES E FRANGO À MILANESA + 2 ACOMPANHAMENTOS</h5>
+          <h3 class="mt-4">R$28,00</h3>
+        </li>
+      </ul>
+    </article>
+  
+<br>
+<br>
+
+
+<HR width="n%"align="posição" size="n" color="black" noshade>      
+   
+
+  <!-- BEBIDAS -->
+
+    <div class="col-sm-12">
+      <center>
+      <br>
+      <h2>BEBIDAS SEM GÁS:</h2>
+      <h5>TODOS OS SUCOS NATURAIS POR R$13,00.</h5>
+      <br>
+      <IMG SRC= "./img/Laranja.png" alt="some text" width=200 height=180>
+      <IMG SRC= "./img/Abacaxi.png" alt="some text" width=200 height=180>
+      <IMG SRC= "./img/Melancia.png" alt="some text" width=200 height=180> 
+      <br> 
+      <br>
+      <br>
+      <IMG SRC= "./img/suco-de-morango.png" alt="some text" width=200 height=180> 
+      <IMG SRC= "./img/limonada.png" alt="some text" width=200 height=180> 
+      <br>
+      <br>
+      <p>AÇÚCAR ADICIONAL E CANUDOS NÃO SERÃO COBRADOS.</p>
+      </center>
+    </div>
+
+    <HR width="n%" align="posição" size="n" color="black" noshade>
+
+    <div class="col-sm-12"></div>
+      <center>
+      <br>
+      <h2>BEBIDAS COM GÁS:</h2>
+      <h4>TODOS OS REFRIGERANTES E ENERGÉTICOS POR R$8,00.</h4>
+      <br>
+      <IMG SRC= "./img/Energético2.png" alt="some text" width=200 height=200>
+      <IMG SRC= "./img/Energético.png" alt="some text" width=200 height=200>
+      <IMG SRC= "./img/lata-de-refrigerante.png" alt="some text" width=200 height=200> 
+      <br>
+      <br>
+      <IMG SRC= "./img/refrigerante.png" alt="some text" width=200 height=180>
+      <IMG SRC= "./img/refripepsi.png" alt="some text" width=200 height=180> 
+      <IMG SRC= "./img/refrisprite.png" alt="some text" width=200 height=180> 
+      <br>
+      <br>
+      </center>
+    </div>
+
+    <HR width="n%" align="posição" size="n" color="black" noshade>
+
+    <div class="col-sm-12">
+      <center>
+      <br>
+      <h2>BEBIDAS ALCOÓLICAS:</h2>
+      <h4>TODOS OS DRINKS POR R$18,00.</h4>
+      <br>
+      <IMG SRC= "./img/coquetel.png" alt="some text" width=120 height=100>
+      <IMG SRC= "./img/bebidas-alcoolicas.png" alt="some text" width=120 height=100>
+      <IMG SRC= "./img/coquetel2.png" alt="some text" width=120 height=100> 
+      <IMG SRC= "./img/bebida.png" alt="some text" width=120 height=100>
+      <IMG SRC= "./img/pina-colada.png" alt="some text" width=120 height=100> 
+      <IMG SRC= "./img/mojito.png" alt="some text" width=120 height=100> 
+      <br>
+      <br>
+      <h5>A VENDA DE BEBIDAS ALCOÓLICAS É PROIBIDA PARA MENORES DE 18 ANOS.</h5> 
+      <br>
+      <br>
+      </center>
+    </div>
+
+  </center>
+  </div>
+</div>
+
+<!-- CONSIDERAÇÕES FINAIS -->
+
+<div class="mt-5 p-4 bg-dark text-white text-center">
+  <p></p>
+  <p>ESTE SITE FOI DESENVOLVIDO PELA FASTCODE</p>
+<div class="mt-5 p-4 bg-dark text-white text-left">
+  <IMG SRC= "./img/instagram (1).png" alt="some text" width=100 height=100>   
+  <IMG SRC= "./img/facebook (1).png" alt="some text" width=100 height=100> 
+  <IMG SRC= "./img/whatsapp (1).png" alt="some text" width=100 height=100> 
+  <IMG SRC= "./img/twitter.png" alt="some text" width=100 height=100>  
+</div>
+
+</body>
+
+</html>
